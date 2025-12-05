@@ -34,20 +34,24 @@ The tutorial is organized into eight main modules, each focusing on specific asp
 cd 02_setup
 ```
 
-3. Install required packages:
-```
-pip install -r requirements.txt
-```
-
-4. For PyTorch with CUDA support (optional but recommended):
+3. For PyTorch with CUDA support (optional but recommended. In case of CUDA 11.8 version):
 ```
 pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu118
+```
+
+4. Install required packages:
+```
+pip install -r requirements.txt
 ```
 
 5. Install Ollama for local LLM deployment (required for 08_AI_Agent modules):
    - Follow instructions at the Ollama installation URL provided in the setup folder
 
-6. Configure environment variables:
+6. Install Docker Desktop 
+   - For Windows, you can download https://docs.docker.com/desktop/setup/install/windows-install/
+   - For Mac, https://docs.docker.com/desktop/setup/install/mac-install/
+
+7. Configure environment variables:
    - Create a .env file with your API keys (Hugging Face, OpenAI, etc.)
    - Refer to .env examples in relevant module directories
 
