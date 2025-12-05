@@ -204,8 +204,11 @@ Refer to individual README files in module directories for specific instructions
 
 ## Author
 
-This tutorial was developed for educational purposes in AI agent development and infrastructure intelligence systems.
+This tutorial was developed for educational purposes in AI agent development and infrastructure intelligence systems by Taewook Kang (laputa99999@gmail.com)
+
 
 ## License
 
 This project is provided for educational and research purposes. Users are responsible for complying with all applicable licenses for third-party libraries, models, and datasets used in this tutorial. Refer to individual library documentation for specific license terms.
+
+- MIT License
