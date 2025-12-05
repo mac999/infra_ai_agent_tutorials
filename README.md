@@ -26,7 +26,7 @@ The tutorial is organized into eight main modules, each focusing on specific asp
 Before installation, please read [development environment setup manual](https://github.com/mac999/infra_ai_agent_tutorials/blob/main/02_setup/dev-env.docx).
 
 ### Prerequisites
-- Python 3.9 or higher
+- Python 3.11 or stable version
 - CUDA-compatible GPU with 8GB VRAM minimum (recommended for LLM training)
 - 16GB RAM minimum
 - 10GB free disk space
