@@ -18,8 +18,8 @@ The tutorial is organized into eight main modules, each focusing on specific asp
 - **08_AI_Agent**: Complete AI agent development including chatbots, Ollama integration, agent frameworks, LLM-MCP applications, and infrastructure graph RAG systems
 
 <p align="center">
-   <img src="https://github.com/mac999/infra_ai_agent_tutorials/blob/main/08_AI_Agent/5_infra_graph_rag/doc/img8.jpg" height="300"/>
-   <img src="https://github.com/mac999/infra_ai_agent_tutorials/blob/main/08_AI_Agent/5_infra_graph_rag/doc/img20.jpg" height="300"/>
+   <img src="https://github.com/mac999/infra_ai_agent_tutorials/blob/main/08_AI_Agent/5_infra_graph_rag/doc/img8.jpg" height="250"/>
+   <img src="https://github.com/mac999/infra_ai_agent_tutorials/blob/main/08_AI_Agent/5_infra_graph_rag/doc/img20.jpg" height="250"/>
 </p>
 
 ## Installation
