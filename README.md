@@ -18,6 +18,7 @@ The tutorial is organized into eight main modules, each focusing on specific asp
 - **08_AI_Agent**: Complete AI agent development including chatbots, Ollama integration, agent frameworks, LLM-MCP applications, and infrastructure graph RAG systems
 
 ## Installation
+Before installation, please read [development environment setup manual](https://github.com/mac999/infra_ai_agent_tutorials/blob/main/02_setup/dev-env.docx).
 
 ### Prerequisites
 - Python 3.9 or higher
