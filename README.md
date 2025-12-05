@@ -17,6 +17,48 @@ The tutorial is organized into eight main modules, each focusing on specific asp
 - **07_RAG**: Retrieval-augmented generation using LangChain, prompt templates, LCEL, function calling, agents, database integration, and web scraping
 - **08_AI_Agent**: Complete AI agent development including chatbots, Ollama integration, agent frameworks, LLM-MCP applications, and infrastructure graph RAG systems
 
+## Installation
+
+### Prerequisites
+- Python 3.9 or higher
+- CUDA-compatible GPU with 8GB VRAM minimum (recommended for LLM training)
+- 16GB RAM minimum
+- 10GB free disk space
+
+### Setup Instructions
+
+1. Clone or download this repository
+
+2. Navigate to the setup directory:
+```
+cd 02_setup
+```
+
+3. Install required packages:
+```
+pip install -r requirements.txt
+```
+
+4. For PyTorch with CUDA support (optional but recommended):
+```
+pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu118
+```
+
+5. Install Ollama for local LLM deployment (required for 08_AI_Agent modules):
+   - Follow instructions at the Ollama installation URL provided in the setup folder
+
+6. Configure environment variables:
+   - Create a .env file with your API keys (Hugging Face, OpenAI, etc.)
+   - Refer to .env examples in relevant module directories
+
+### Additional Dependencies
+
+For specific modules, additional setup may be required:
+
+- **Neo4j**: Install and configure Neo4j database for graph RAG (07_RAG/2_db and 08_AI_Agent/5_infra_graph_rag)
+- **Docker**: Required for running Neo4j and FalkorDB containers
+- **Jupyter**: Already included in requirements.txt for notebook execution
+
 ## Hands-on Content
 
 ### Machine Learning (03_ML)
@@ -133,48 +175,6 @@ The content progressively increases in complexity, making it suitable for:
 - Data scientists expanding into AI agent systems
 - Graduate students in computer science or related fields
 - AI practitioners seeking practical implementation experience
-
-## Installation
-
-### Prerequisites
-- Python 3.9 or higher
-- CUDA-compatible GPU with 8GB VRAM minimum (recommended for LLM training)
-- 16GB RAM minimum
-- 10GB free disk space
-
-### Setup Instructions
-
-1. Clone or download this repository
-
-2. Navigate to the setup directory:
-```
-cd 02_setup
-```
-
-3. Install required packages:
-```
-pip install -r requirements.txt
-```
-
-4. For PyTorch with CUDA support (optional but recommended):
-```
-pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu118
-```
-
-5. Install Ollama for local LLM deployment (required for 08_AI_Agent modules):
-   - Follow instructions at the Ollama installation URL provided in the setup folder
-
-6. Configure environment variables:
-   - Create a .env file with your API keys (Hugging Face, OpenAI, etc.)
-   - Refer to .env examples in relevant module directories
-
-### Additional Dependencies
-
-For specific modules, additional setup may be required:
-
-- **Neo4j**: Install and configure Neo4j database for graph RAG (07_RAG/2_db and 08_AI_Agent/5_infra_graph_rag)
-- **Docker**: Required for running Neo4j and FalkorDB containers
-- **Jupyter**: Already included in requirements.txt for notebook execution
 
 ## Usage
 
