@@ -4,20 +4,24 @@ import json
 from pydantic.v1 import BaseModel, Field, validator
 from langchain_core.tools import StructuredTool, ToolException
 from langchain_core.prompts import ChatPromptTemplate
-from langchain.agents import create_tool_calling_agent, AgentExecutor
 from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI  # assuming you are using OpenAI LLM
+from langchain_openai import ChatOpenAI
+from langgraph.prebuilt import create_react_agent
 
 # Load environment variables from a .env file
 load_dotenv()
 
-from langchain.agents import initialize_agent
-from langchain.chat_models import ChatOpenAI
-
 key = os.getenv("OPENAI_API_KEY")
 
 llm = ChatOpenAI(model="gpt-4", openai_api_key=key)
-agent = initialize_agent(llm=llm, tools=[])  # 기본 에이전트 생성
+
+# Create agent using LangGraph
+agent = create_react_agent(llm, tools=[])
+
 query = "What is the weather today?"
-response = agent.run(query)
+response = agent.invoke({"messages": [("user", query)]})
 print(response)
+
+ai_message = response['messages'][-1].text
+print("AI Response:", ai_message)
+

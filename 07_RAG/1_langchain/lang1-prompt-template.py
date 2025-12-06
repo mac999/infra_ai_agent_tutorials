@@ -1,4 +1,4 @@
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 
 template = """Answer the question based on the context below. If the
 question cannot be answered using the information provided answer
