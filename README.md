@@ -65,7 +65,7 @@ pip install -r requirements.txt
 
 For specific modules, additional setup may be required:
 
-- **Docker**: Required for running [FalkorDB](https://github.com/FalkorDB/FalkorDB) containers
+- **FalkorDB**: Required for running [FalkorDB](https://github.com/FalkorDB/FalkorDB) containers
 - **Neo4j**: Install and configure [Neo4j database](https://neo4j.com/download/) for graph RAG (07_RAG/2_db and 08_AI_Agent/5_infra_graph_rag)
 - **Jupyter**: Already included in requirements.txt for notebook execution
 
